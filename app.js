@@ -11,8 +11,8 @@ var messageRoutes = require('./routes/messages');
 var userRoutes = require('./routes/user');
 
 var app = express();
-mongoose.connect('jrix:jrix123@ds259325.mlab.com:59325/jintelauth');
-
+mongoose.connect('mongodb://jrix:jrix123@ds259325.mlab.com:59325/jintelauth', { useMongoClient: true });
+// mongodb://<dbuser>:<dbpassword>@ds259325.mlab.com:59325/jintelauth
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
