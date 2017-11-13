@@ -14,7 +14,7 @@ var app = express();
 //mongoose.connect('mongodb://localhost:27017/node-angular', { useMongoClient: true });
 
 
-mongoose.connect('mongodb://jrix:jrix123@ds259325.mlab.com:59325/jintelauth', { useMongoClient: true }); 
+mongoose.connect('mongodb://jrix:jrix123@ds259325.mlab.com:59325/jintelauth'); 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
